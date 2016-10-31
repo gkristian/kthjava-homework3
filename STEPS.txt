@@ -1,0 +1,16 @@
+Steps : 
+
+1. Create folder "class" in it
+2. Compile :
+	javac -d class *.java
+3. Star RMI registry IN CLASS FOLDER :
+	start rmiregistry 
+4. Start market :
+	start java -classpath class -Djava.rmi.server.codebase=file:class/ homework3.MarketMain
+5. Start bank
+	start java -classpath class homework3.BankMain
+6. Start client
+	start java -classpath class homework3.ClientMain
+
+set CLASSPATH=C:\Program Files\Java\db-derby-10.12.1.1-bin\lib\derby.jar;C:\Program Files\Java\db-derby-10.12.1.1-bin\lib\derbytools.jar;.
+C:\Program Files\Java\db-derby-10.12.1.1-bin
